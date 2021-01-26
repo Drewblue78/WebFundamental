@@ -28,6 +28,10 @@ header {
   right: 0;
 }
 
+header.spacer {
+  position: static;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -43,8 +47,13 @@ footer {
   left: 0;
 }
 
+#div.Text {
+  width: auto;
+  background-color: beige;
+}
+
 #div {
-  color: #fffcf1;
+  color: #acacac;
   margin: 1;
   text-transform: uppercase;
   padding: 3px 8px;
@@ -60,8 +69,8 @@ flex-header {
 
 img {
   display: inline-block;
-  height: 200px;
-  margin: 0 px;
+  margin: 0px;
+  max-width: 100%;
 }
 
 a:hover {
@@ -83,11 +92,6 @@ a:hover {
   padding: 5px 10px;
 }
 
-div p a {
-  text-decoration: none;
-  vertical-align: middle;
-}
-
 main {
   margin-top: 250px;
   display: flex;
@@ -96,5 +100,16 @@ main {
 }
 
 main>* {
-  max-width: 60px;
+  max-width: 400px;
 }
+
+@media only screen and (max-width: 500px) {
+  main {}
+}
+
+/* @media only screen and (max-width: 200px) {
+  
+}
+@media only screen and (max) {
+  
+} */
