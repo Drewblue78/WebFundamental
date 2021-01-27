@@ -36,6 +36,7 @@ header.spacer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -35px;
   width: 50%;
 }
 
@@ -65,18 +66,19 @@ h1 {
   text-align: center;
 }
 
+a #list {
+  background-color: white;
+  color: black;
+  min-width: 240px;
+  border: none;
+  text-align: left;
+}
+
 #list {
   background-color: white;
   color: black;
   min-width: 240px;
-  border: none
-}
-
-#github {
-  background-color: white;
-  color: black;
-  min-width: 240px;
-  border: none
+  border: none;
 }
 
 tr {
@@ -95,7 +97,8 @@ flex-header {
 img {
   display: inline-block;
   margin: 0px;
-  max-width: 100%;
+  width: fit-content;
+  vertical-align: text-bottom;
 }
 
 table.align {
@@ -110,6 +113,7 @@ a:hover {
 
 #social-media a img {
   max-height: 2em;
+  max-width: 2em;
   transition: opacity 0.4s;
 }
 
@@ -131,7 +135,7 @@ main {
 }
 
 main>* {
-  max-width: 400px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
