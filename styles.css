@@ -41,7 +41,6 @@ header.spacer {
 }
 
 footer {
-  margin-top: 100px;
   position: fixed;
   padding: 10px;
   left: 0;
@@ -134,8 +133,22 @@ main {
   vertical-align: middle;
 }
 
-main>* {
-  width: 100%;
+p {
+  text-align: center;
+}
+
+/* GALLERY */
+
+#gallery {
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#gallery div img {
+  max-width: 200px;
+  margin-left: 15em;
 }
 
 @media only screen and (max-width: 500px) {
