@@ -140,15 +140,27 @@ p {
 /* GALLERY */
 
 #gallery {
-  width: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: -6px;
+  background-color: #c4cace;
+  margin-left: 10px;
+  margin-right: 13px;
 }
 
 #gallery div img {
-  max-width: 200px;
-  margin-left: 15em;
+  max-width: 100%;
+  margin-top: 1em;
+}
+
+.row {
+  display: flex;
+  margin: 20px;
+}
+
+.column {
+  flex: 50%;
 }
 
 @media only screen and (max-width: 500px) {
