@@ -11,6 +11,23 @@
 <body>
 
   <header class="spacer">
+    <form action="/auth" method="get">
+      <input type="submit" value="Login">
+    </form>
+
+    <h4>Login</h4>
+    <form action="/auth" method="post">
+      <input name="username" placeholder="Your Username">
+      <input name="password" placeholder="Secret Password" type="password">
+      <input type="submit" value="Login">
+    </form>
+
+    <h4>Register</h4>
+    <form action="/auth/register" method="post">
+      <input name="username" placeholder="Your Username">
+      <input name="password" placeholder="Secret Password" type="password">
+      <input type="submit" value="Register">
+    </form>
     <div id="flex-header">
       <div></div>
       <div id="social-media">

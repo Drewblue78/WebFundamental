@@ -32,6 +32,19 @@ header.spacer {
   position: static;
 }
 
+form input {
+  display: block;
+}
+
+h4 {
+  margin-left: 0px;
+}
+
+td {
+  border: 1px solid grey;
+  padding: 4px;
+}
+
 .center {
   display: block;
   margin-left: auto;
