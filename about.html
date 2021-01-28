@@ -9,11 +9,18 @@
 </head>
 
 <body>
-  <header>
+  <header class="spacer">
+    <div id="left">
+
+      <form action="/auth" method="post">
+        <input name="username" placeholder="Username">
+        <input name="password" placeholder="Password" type="password">
+        <input type="submit" value="Register">
+      </form>
+    </div>
+
     <div id="flex-header">
-      <div class="center">
-        <img src="img/logo.svg" alt="Wantosavant" />
-      </div>
+      <div></div>
       <div id="social-media">
         <a href="https://facebook.com">
           <img src="img/facebook.png">
@@ -26,23 +33,24 @@
         </a>
       </div>
     </div>
-
-
-  </header>
-  <main>
-
-    <div>
-      <h1>About</h1>
-      <p class="Text"> My name is Andrew Power, I am a new web developer. I have years of experience in
-        design and digital art. Now the knowledge of application development has been
-        added to my skills. Give me the oppurtunity to show you my work.</p>
-
-      <p><a href="projects.html">Projects</a></p>
-      <p><a href="gallery.html">Gallery</a></p>
+    <div class="center">
+      <img src="img/logo.svg" alt="Wantosavant" />
     </div>
+  </header>
 
-  </main>
-  <footer>
+  <h1>About</h1>
+  <div id="about">
+    <p class="Text"> My name is Andrew Power, I am a new web developer. I have years of experience in
+      design and digital art. Now the knowledge of application development has been
+      added to my skills. Give me the oppurtunity to show you my work.</p>
+  </div>
+  <div>
+    <p><a href="projects.html">Projects</a></p>
+    <p><a href="gallery.html">Gallery</a></p>
+  </div>
+
+
+  <footer small>
     Copyright &copy; 2021
   </footer>
 
